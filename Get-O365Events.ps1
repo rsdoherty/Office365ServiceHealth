@@ -54,10 +54,4 @@
        if($last -eq 0){$last = 10} 
         $newEvent| sort $_.Time  |   select -Property Title,ServiceAftected,Status, Time,LastUpdated, message -Last $last | fl  
         } 
-    } 
-     
-    
- 
- 
-   
-  
+    }
